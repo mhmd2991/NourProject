@@ -18,8 +18,8 @@ html {
 :root {
     --darkBlueGreenColor: #1D8B94;
     --blueGreenColor: #53D3DE;
-    --bgColor: #f4f4f4;
-    --textColor: #474747;
+    --bgColor: #f5f9f6;
+    --textColor: #343531;
     --blackColor: #000;
     --whiteColor: #ffffff;
     --mainTransition: all .3s;
@@ -191,6 +191,34 @@ img {
 /*End Home Section*/
 /* Start definition Section  */
 .definition{}
-.definition .container{}
-.definition .container h3{}
+.definition .container{
+    padding: 40px 0;
+}
+.definition .container h2{
+    text-transform: capitalize;
+    text-align: center;
+    letter-spacing: .5px;
+}
+
+.definition .container .row{
+    padding: 60px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.definition .container .row .def-text h3{
+    text-transform: capitalize;
+}
+
+.definition .container .row .def-text p{
+    font-size: 20px;
+    margin: 20px 0;
+}
+.definition .container .row .def-text ul{
+    list-style: disc;
+}
+.definition .container .row .def-text ul li{
+    margin-bottom: 10px;
+    margin-left: 20px;
+    color: #6E807A;
+}
 /* End definition Section  */
