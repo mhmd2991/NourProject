@@ -165,8 +165,6 @@ img {
     background-color: rgba(52, 53, 49, 0.7);
 }
 
-.home .container {}
-
 .home .container .home-text {
     position: absolute;
     top: 50%;
@@ -182,43 +180,189 @@ img {
     text-transform: capitalize;
 }
 
+.home .container .home-text h1 span {
+    color: var(--blueGreenColor);
+}
+
 .home .container .home-text p {
     color: var(--whiteColor);
     margin-top: 10px;
-
 }
 
 /*End Home Section*/
 /* Start definition Section  */
-.definition{}
-.definition .container{
+.definition .container,
+.semiology .container,
+.symptoms .container,
+.role .container {
     padding: 40px 0;
+    border-bottom: 1px solid #f0f0f0;
 }
-.definition .container h2{
+
+.definition .container h2,
+.semiology .container h2,
+.symptoms .container h2,
+.role .container h2 {
     text-transform: capitalize;
     text-align: center;
     letter-spacing: .5px;
 }
 
-.definition .container .row{
+.definition .container .row {
     padding: 60px 0;
     display: flex;
     justify-content: space-between;
 }
-.definition .container .row .def-text h3{
+
+.definition .container .row .def-text h3 {
     text-transform: capitalize;
 }
 
-.definition .container .row .def-text p{
+.definition .container .row .def-text p {
     font-size: 20px;
     margin: 20px 0;
 }
-.definition .container .row .def-text ul{
+
+.definition .container .row .def-text ul {
     list-style: disc;
 }
-.definition .container .row .def-text ul li{
+
+.definition .container .row .def-text ul li {
     margin-bottom: 10px;
     margin-left: 20px;
     color: #6E807A;
 }
+
 /* End definition Section  */
+/* Start semiology Section  */
+.semiology .container .row {
+    padding: 60px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.semiology .container .row .box {
+    background-color: var(--whiteColor);
+    padding: 25px;
+    border-radius: 5px;
+    width: calc((100% - 60px) / 3);
+}
+
+.semiology .container .row .box .box-title {
+    margin-bottom: 20px;
+}
+
+.semiology .container .row .box .box-title h3 {
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.semiology .container .row .box .box-details ul {
+    list-style: disc;
+    padding: 0 15px;
+}
+
+.semiology .container .row .box .box-details ul li {
+    margin-bottom: 15px;
+}
+
+/* End semiology Section  */
+
+/* Start symptoms Section  */
+.symptoms .container .row {
+    padding: 60px 0;
+}
+
+.symptoms .container .row p {
+    letter-spacing: .5px;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.symptoms .container .row p:nth-of-type(2) {
+    margin-bottom: 40px;
+}
+
+.symptoms .container .row .box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.symptoms .container .row .box ul {
+    list-style: disc;
+    list-style-position: inside;
+}
+
+.symptoms .container .row .box ul li {
+    margin-bottom: 20px;
+    text-transform: capitalize;
+}
+
+/* End symptoms Section  */
+/* Start Section Role  */
+.role .container .row {
+    padding: 60px 0;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px
+}
+
+.role .container .row .box {
+    width: calc(100% - 30px / 2);
+    background-color: var(--whiteColor);
+    padding: 20px 25px;
+    border-radius: 5px;
+
+}
+
+.role .container .row .box .box-title {
+    margin-bottom: 30px;
+}
+
+.role .container .row .box .box-title h3 {
+    text-transform: capitalize;
+    text-align: center;
+    letter-spacing: .5px;
+}
+
+.role .container .row .box .box-desc ul {
+    list-style: disc;
+    padding: 0 15px;
+}
+
+.role .container .row .box .box-desc ul li {
+    margin-bottom: 15px;
+}
+
+/* End Section Role  */
+/* Start footer  */
+.footer {
+    background-color: var(--blueGreenColor);
+}
+
+.footer .container {
+    padding: 30px 0;
+    display: flex;
+}
+
+.footer .container .box {
+    width: calc(100% / 3);
+    text-align: center;
+}
+
+.footer .container .box svg {
+    text-align: center;
+    filter: invert(100%) sepia(0%) saturate(7479%) hue-rotate(70deg) brightness(99%) contrast(107%);
+}
+
+.footer .container .box p {
+    color: var(--whiteColor);
+    letter-spacing: .5px;
+}
+
+.footer .container .box p:last-of-type {
+    margin-top: 15px;
+}
+
+/* End footer  */
