@@ -212,6 +212,7 @@ img {
     padding: 60px 0;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .definition .container .row .def-text h3 {
@@ -366,3 +367,21 @@ img {
 }
 
 /* End footer  */
+
+.up {
+    position: fixed;
+    bottom: 10px;
+    right: -30px;
+    background-color: var(--darkBlueGreenColor);
+    color: var(--whiteColor);
+    font-weight: bold;
+    font-size: 15px;
+    padding: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: var(--mainTransition) ease-in-out;
+}
+
+.up.show {
+    right: 10px;
+}
